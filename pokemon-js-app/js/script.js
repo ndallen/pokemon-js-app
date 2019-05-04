@@ -16,4 +16,6 @@ var repository = [
         },
 ];
 
-document.write(repository.name);
+for(var i = 0; i < repository.length ; i++) {
+ document.write('<p>' + repository[i].name + '\'s height is: ' + repository[i].height);
+}
