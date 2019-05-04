@@ -18,7 +18,7 @@ var repository = [
 
 for(var i = 0; i < repository.length ; i++) {
     if(repository[i].height > 5.0) {
-        document.write('<p>' + repository[i].name + '\'s height is: ' + repository[i].height + ' feet. Wow thats big...');
+        document.write('<p>' + repository[i].name + '\'s height is: ' + repository[i].height + ' feet. Wow thats big..');
     } else {
         document.write('<p>' + repository[i].name + '\'s height is: ' + repository[i].height + ' feet.');
     }
