@@ -18,7 +18,6 @@ var pokemonRepository = (function () {
 
     ];
 
-
     function add(repository) {
         pokemonRepository.push(repository);
     }
@@ -27,46 +26,22 @@ var pokemonRepository = (function () {
     }
 
     return {
-        add: function(add) {
+        add: function (add) {
             repository.push(add);
         },
-        getAll: function() {
+        getAll: function () {
             return repository;
         }
     };
-    
-    // return {
-    //     add: add,
-    //     getAll: getAll
-    // };
-
-
 })();
 
-Object.keys(pokemonRepository).forEach(function (getAll) {
-    
-    if (pokemonRepository.getAll()[1].height > 5.0) {
+pokemonRepository.getAll().forEach(function (getAll) {
 
-                document.write('<p>' + pokemonRepository.getAll()[1].name + '\'s height is: ' + pokemonRepository.getAll()[1].height + ' feet. Wow thats big..');
-            } else {
-             
-                document.write('<p>' + pokemonRepository.getAll()[1].name + '\'s height is: ' + pokemonRepository.getAll()[1].height + ' feet.');
-                    }
+    if (getAll.height > 5.0) {
 
-    // console.log(pokemonRepository.getAll()[0].name)
-    // console.log(pokemonRepository.getAll());
+        document.write('<p>' + getAll.name + '\'s height is: ' + getAll.height + ' feet. Wow thats big..');
+    } else {
+
+        document.write('<p>' + getAll.name + '\'s height is: ' + getAll.height + ' feet.');
+    }
 });
-
-
-
-
-// OLD FOR LOOP CODE THAT WORKED
-
-    // for (var i = 0; i < repository.length; i++) {
-    //     if (repository[i].height > 5.0) {
-    //         document.write('<p>' + repository[i].name + '\'s height is: ' + repository[i].height + ' feet. Wow thats big..');
-    //     } else {
-    //         document.write('<p>' + repository[i].name + '\'s height is: ' + repository[i].height + ' feet.');
-    //     }
-
-    // }
