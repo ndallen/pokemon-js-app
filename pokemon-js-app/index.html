@@ -8,20 +8,69 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <link rel="stylesheet" href="css/media-queries.css">
     <title>Pokemon Stats</title>
 </head>
 
 <body>
-    <header class="title animated pulse">
-        <h1>Pokemon Stats</h1>
-    </header>
-    <div class="wrapper">
-        <div class="pokeman-box animated slideInLeft">
-            <script src="js/script.js"></script>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar navbar-custom">
+        <img class="center-block" src="img/pokemon-logo.png" alt="">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Characters</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Abilities</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Enter ID or Pokemon" aria-label="Search">
+                <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Find Your Pokemon</button>
+            </form>
         </div>
+    </nav>
+
+    <!-- POKEDEX FILTERS -->
+
+    <!-- Filter buttons -->
+    <div id="buttonContainer">
+        <button class="btn active" onclick="filterSelection('all')"> All Pokemon</button>
+        <button class="btn " onclick="filterSelection('size')">Short</button>
+        <button class="btn " onclick="filterSelection('size')">Medium</button>
+        <button class="btn " onclick="filterSelection('size')">Tall</button>
+        <button class="btn " onclick="filterSelection('size')">Heavy</button>
+        <button class="btn" onclick="filterSelection('type')"> Type</button>
+        <button class="btn" onclick="filterSelection('abilities')"> Abilities</button>
+        <button class="btn" onclick="filterSelection('species')"> Species</button>
+
     </div>
+
+    <div class="pokedex-output">
+       
+    </div>
+
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+        <script class="pokedex-output" src="js/script.js"></script>
+
 </body>
 
 </html>

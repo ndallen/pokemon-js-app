@@ -4,45 +4,94 @@
 
 body {
     background-color: #f4f4f4;
-    font-family: 'Roboto', sans-serif;
-    background: url('http://www.clubit.tv/wp-content/uploads/2017/08/pokemon.jpg');
+    font-family: 'Raleway', sans-serif;
+    /* background: url('http://www.clubit.tv/wp-content/uploads/2017/08/pokemon.jpg'); */
 
 }
-.title {
-    display: flex;
-    justify-content: center;
-   
-  
-}
-header h1 {
-    padding: 10px 20px 10px 20px;
-    text-align: center;
-    color: black;
-    text-transform: uppercase;
-    font-size: 4rem;
-    background-color: white;
-    border: 5px solid black;
-    border-radius: 10px;
-}
-.wrapper {
-    text-align: center;
-}
-.pokeman-box {
-    display: inline-block;
-    width: 700px;
-    justify-content: space-between;
-    background-color: salmon;
-    border: 5px solid black;
-    border-radius: 10px;
-    padding: 20px;
-    margin-top: 30px;  
+/* NAVIGATION  */
 
+.form-inline .btn {
+    color:  #ffca05;
+    border: 2px solid  #ffca05;
+    background: #3761ab;
 }
-.pokeman-box p {
-    text-align: center;
-    padding: 20px;
+
+.form-inline .btn:hover {
+    color:  #ffca05;
+    border: 2px solid  #ffca05;
+    background: #3761ab;
+}
+
+.navbar-custom {
+    background-color:#3761ab;
+    border-bottom: 5px solid  #ffca05;
+    
+    
+}
+.navbar-custom a  {
+    color:  #ffca05;
     font-size: 1.5rem;
-    text-transform: uppercase;
+}
+.header-image {
+    width: 100%;
+}
+.header-image img{
+    width: 30%;
+    text-align: center;
+}
+.custom-toggler.navbar-toggler {
+    border-color: #3761ab;
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  color:  #3761ab;
 }
 
 
+/* Header Image */
+
+.center-block {
+   width: 150px;
+
+/* POKEDEX FILTERS */
+}
+.btn {
+ 
+  padding: 12px 16px;
+  background-color:#ffca05;
+ 
+}
+  /* Add a light grey background on mouse-over */
+  .btn:hover {
+    background-color:#ffca05;
+  }
+  
+  /* Add a dark background to the active button */
+  .btn.active {
+    background-color: #3761ab;
+    color: white;
+  }
+
+  .btn.active:hover {
+    background-color: #3761ab;
+    color: #ffca05;
+  }
+
+  .btn.active:visited {
+    border: none;
+  }
+
+  /* POKEDEX OUTPUT */
+
+  .pokedex-output {
+      width: 50%;
+      min-width: 300px;
+      height: 500px;
+      background-color:#ffca05;
+      border: solid 10px  #3761ab;
+      border-radius: 20px;
+      margin: 0 auto;
+      margin-top: 60px;
+      padding: 20px;
+      font-size: 1.25rem;
+  }
