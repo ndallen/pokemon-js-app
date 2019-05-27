@@ -1,13 +1,8 @@
 * {
     box-sizing: border-box;
-  }
-
-body {
-    background-color: #f4f4f4;
     font-family: 'Raleway', sans-serif;
-    /* background: url('http://www.clubit.tv/wp-content/uploads/2017/08/pokemon.jpg'); */
-
 }
+
 /* NAVIGATION  */
 
 .form-inline .btn {
@@ -17,20 +12,21 @@ body {
 }
 
 .form-inline .btn:hover {
-    color:  #ffca05;
+    color:  #3761ab;
     border: 2px solid  #ffca05;
-    background: #3761ab;
+    background: border 2px solid  #ffca05;
 }
 
 .navbar-custom {
     background-color:#3761ab;
-    border-bottom: 5px solid  #ffca05;
-    
-    
+    border-bottom: 5px solid  #ffca05; 
 }
 .navbar-custom a  {
     color:  #ffca05;
     font-size: 1.5rem;
+}
+.navbar-custom a:hover  {
+    color:  #fff;
 }
 .header-image {
     width: 100%;
@@ -42,56 +38,123 @@ body {
 .custom-toggler.navbar-toggler {
     border-color: #3761ab;
 }
-.custom-toggler .navbar-toggler-icon {
+.custom-toggler .navbar-toggler-icon{
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-  color:  #3761ab;
+  color:  #ffca05;
 }
-
 
 /* Header Image */
 
 .center-block {
    width: 150px;
-
+}
 /* POKEDEX FILTERS */
+
+.btn:hover {
+  background-color:#ffca05 !important;
 }
-.btn {
- 
-  padding: 12px 16px;
-  background-color:#ffca05;
- 
+
+.btn.active {
+  background-color: #3761ab !important;
+    /* color: white; */
 }
-  /* Add a light grey background on mouse-over */
-  .btn:hover {
-    background-color:#ffca05;
-  }
-  
-  /* Add a dark background to the active button */
-  .btn.active {
-    background-color: #3761ab;
-    color: white;
-  }
 
-  .btn.active:hover {
-    background-color: #3761ab;
-    color: #ffca05;
-  }
+.btn.active:hover {
+  background-color: #3761ab;
+}
 
-  .btn.active:visited {
-    border: none;
-  }
-
+.btn.active:visited {
+  border: none;
+}
+#buttonContainer {
+ background-color: #ffca05;
+}
   /* POKEDEX OUTPUT */
+.container {
+  margin: 50px 0px 50px 0px;
+ background-color: #3761ab;
+ border: #3761ab 20px solid;
+ border-radius: 10px;
+}
+.pokemon-side-tab {
+  background-color:#ffca05;
+  border: solid 10px  #3761ab;
+  border-radius: 10px;
+}
+.pokedex-output {
+  margin: auto;
+  height: 520px;
+  background-color:#ffca05;
+  border: solid 10px  #3761ab;
+  border-radius: 10px;
+  font-size: 1.25rem;  
+}
+.pokedex-output p {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 20px;
+  text-transform: uppercase;
+  color: #3761ab;
+  font-weight: 800;
+}
+.pokemon-tab {
+  color:red;
+}
+#pokemon-image{
+  display: block;
+  margin: 0 auto;
+  width: 60%; 
+}
+#pokemon-image img {
+  text-align: center;
+}
+ h1{
+  text-align: center;
+}
+.titleID{
+  color: red;
+}
 
-  .pokedex-output {
-      width: 50%;
-      min-width: 300px;
-      height: 500px;
-      background-color:#ffca05;
-      border: solid 10px  #3761ab;
-      border-radius: 20px;
-      margin: 0 auto;
-      margin-top: 60px;
-      padding: 20px;
-      font-size: 1.25rem;
-  }
+  /* Bootsrap List Group */
+  button {
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+  outline: inherit;
+
+}
+.list-group{
+  text-align: center;  
+}
+.list-group-item{
+  color: #ffca05 !important;
+  background-color: #3761ab !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-top: 7px;
+ }
+.list-group-item:hover {
+  background-color:  !important;
+ }
+
+li:hover {
+  border: #fff solid 2px;
+  background-color: salmon !important;
+  color: #3761ab !important;
+}
+/* footer */
+.form-control{
+  width: 100px;
+}
+.footer {
+  width: 500px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+

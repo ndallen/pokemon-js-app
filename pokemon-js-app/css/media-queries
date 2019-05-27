@@ -1,1 +1,18 @@
-@media 
+
+
+@media only screen and (min-width: 228px) and (max-width: 750px){
+
+  .container {
+    margin-top: 0px;
+    border-radius: 0px;
+  }
+  #pokemon-image img {
+    width: 100%;
+  }
+  body {
+    background-color: red;
+  }
+  li {
+    font-size: 4rem;
+  }
+}

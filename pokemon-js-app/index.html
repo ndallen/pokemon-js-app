@@ -13,14 +13,15 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/media-queries.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <title>Pokemon Stats</title>
 </head>
 
 <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar navbar-custom">
+    <nav class="navbar navbar-expand-lg navbar-custom">
         <img class="center-block" src="img/pokemon-logo.png" alt="">
-        <a class="navbar-brand" href="#"></a>
         <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
@@ -28,7 +29,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
@@ -41,16 +42,17 @@
             </ul>
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Enter ID or Pokemon" aria-label="Search">
-                <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Find Your Pokemon</button>
+                <button class="search-button btn btn-outline-warning my-2 my-sm-0" type="submit">Find Your
+                    Pokemon</button>
             </form>
         </div>
     </nav>
 
     <!-- POKEDEX FILTERS -->
 
-    <!-- Filter buttons -->
-    <div id="buttonContainer">
-        <button class="btn active" onclick="filterSelection('all')"> All Pokemon</button>
+    <!-- Filter buttons USE LATER IN PROJECT-->
+    <!-- <div id="buttonContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Pokefilter</button>
         <button class="btn " onclick="filterSelection('size')">Short</button>
         <button class="btn " onclick="filterSelection('size')">Medium</button>
         <button class="btn " onclick="filterSelection('size')">Tall</button>
@@ -59,17 +61,35 @@
         <button class="btn" onclick="filterSelection('abilities')"> Abilities</button>
         <button class="btn" onclick="filterSelection('species')"> Species</button>
 
+    </div> -->
+
+
+    <div class="container">
+        <div class="row">
+            <div class="pokemon-side-tab col-sm col-md-4 col-lg-4">
+                <ul id="list" class="list-group list-group-flush">
+                  
+                </ul>
+            </div>
+            <div class="pokedex-output col-sm col-md-8 col-lg-8">
+               <p> Select Your Pokemon Character</p> 
+               <img id="pokemon-image" src="img/pokemon-banner.png" alt="pikacho image">
+            </div>
+
+        </div>
     </div>
 
-    <div class="pokedex-output">
-       
-    </div>
 
-    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-        <script class="pokedex-output" src="js/script.js"></script>
+    <script class="pokedex-output" src="js/script.js"></script>
 
 </body>
 

@@ -1,14 +1,16 @@
 
-@media screen and (max-width:760px) {
+@media only screen and (min-width: 228px) and (max-width: 750px){
 
-    .pokeman-box {
-        display: inline-block;
-        width: 450px;
-        justify-content: space-between;
-        border: 5px solid black;
-        border-radius: 10px;
-        padding: 20px;
-        margin-top: 30px;  
-    
-    }
+.container {
+    margin-top: 0px;
+    border-radius: 0px;
+}
+li {
+    font-size: 1.2rem;
+}
+#pokemon-image {
+    width: 80%;
+    margin-top : 20px;
+}
+
 }
