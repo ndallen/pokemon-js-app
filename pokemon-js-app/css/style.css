@@ -80,6 +80,7 @@
   background-color:#ffca05;
   border: solid 10px  #3761ab;
   border-radius: 10px;
+  
 }
 .pokedex-output {
   margin: auto;
@@ -90,12 +91,21 @@
   font-size: 1.25rem;  
 }
 .pokedex-output p {
+  
   font-size: 2rem;
   text-align: center;
   margin-top: 20px;
   text-transform: uppercase;
   color: #3761ab;
   font-weight: 800;
+  margin-bottom: 0;
+}
+.pokedex-output img {
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+
+
 }
 .pokemon-tab {
   color:red;
@@ -124,10 +134,12 @@
 	font: inherit;
 	cursor: pointer;
   outline: inherit;
+  
 
 }
 .list-group{
   text-align: center;  
+  
 }
 .list-group-item{
   color: #ffca05 !important;
@@ -137,6 +149,7 @@
   cursor: pointer;
   border-radius: 20px;
   margin-top: 7px;
+  
  }
 .list-group-item:hover {
   background-color:  !important;
